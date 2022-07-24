@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import { StatusBar } from "expo-status-bar";
 import BasicScreen from "./BasicScreen";
 import PanGestureScreen from "./PanGestureScreen";
 import ScrollViewScreen from "./ScrollViewScreen";
@@ -17,6 +18,7 @@ const RootDrawer = createDrawerNavigator<RootDrawerParamList>();
 export default function App() {
 	return (
 		<NavigationContainer>
+			<StatusBar style="auto" />
 			<RootDrawer.Navigator initialRouteName="Basic">
 				<RootDrawer.Screen name="Basic" component={BasicScreen} />
 				<RootDrawer.Screen name="PanGesture" component={PanGestureScreen} />

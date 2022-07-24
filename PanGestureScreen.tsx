@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import Animated, {
 	useAnimatedGestureHandler,
@@ -49,7 +48,6 @@ export default function PanGestureScreen() {
 
 	return (
 		<View style={styles.container}>
-			<StatusBar style="auto" />
 			<PanGestureHandler onGestureEvent={handlePanGesture}>
 				<Animated.View style={[styles.square, squareStyle]} />
 			</PanGestureHandler>

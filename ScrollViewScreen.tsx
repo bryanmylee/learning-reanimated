@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { Dimensions, StyleSheet, View } from "react-native";
 import Animated, {
 	Extrapolate,
@@ -54,7 +53,6 @@ export default function ScrollViewScreen() {
 
 	return (
 		<View style={styles.container}>
-			<StatusBar style="auto" />
 			<Animated.ScrollView
 				horizontal
 				onScroll={handleScroll}

@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { StyleSheet, View } from "react-native";
 import Animated, {
@@ -38,7 +37,6 @@ export default function BasicScreen() {
 
 	return (
 		<View style={styles.container}>
-			<StatusBar style="auto" />
 			<Animated.View style={[styles.indicator, indicatorStyle]} />
 		</View>
 	);
