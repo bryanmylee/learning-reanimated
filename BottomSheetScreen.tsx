@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { StyleSheet, useWindowDimensions, View } from "react-native";
 import {
-	Gesture,
-	GestureDetector,
 	GestureHandlerRootView,
 	PanGestureHandler,
 	PanGestureHandlerGestureEvent,
@@ -13,11 +11,9 @@ import Animated, {
 	useAnimatedGestureHandler,
 	useAnimatedStyle,
 	useSharedValue,
-	withDecay,
-	withSequence,
 	withSpring,
 } from "react-native-reanimated";
-import { clamp, clampWorklet } from "./clamp";
+import { clampWorklet } from "./clamp";
 
 export default function BottomSheetScreen() {
 	return (
